@@ -1,4 +1,4 @@
 # pip instal -r requirements.txt => ese comando ejecuta todo lo las lib del txt
-flask
-numpy 
-pandas
+opencv-python
+numpy
+imutils
