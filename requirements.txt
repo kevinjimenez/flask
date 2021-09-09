@@ -1,4 +1,6 @@
 # pip instal -r requirements.txt => ese comando ejecuta todo lo las lib del txt
 opencv-python
+# opencv-contrib-python --upgrade
 numpy
 imutils
+matplotlib
