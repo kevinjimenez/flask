@@ -1,0 +1,8 @@
+creacion entorno virtual: python3.9 -m venv ./venv
+activar entorno virtual: source venv/bin/activate
+listar paquetes en entorno: pip list
+librerias: 
+    pip install numpy
+    pip install matplotlib
+    pip install opencv-contrib-python --upgrade
+    pip install imutils
