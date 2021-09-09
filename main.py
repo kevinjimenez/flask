@@ -1,7 +1,11 @@
+from logging import DEBUG
 from flask import Flask, request, make_response, redirect, render_template
 
-
 app = Flask(__name__)
+app.config.update(
+    DEBUG=False,
+    ENV='development'
+)
 
 todos = ['comprar cafe', 'enviar solicitud', 'entregar producto']
 
@@ -29,4 +33,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+    # app.run(debug=True)
