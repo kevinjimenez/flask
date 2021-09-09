@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 todos = ['comprar cafe', 'enviar solicitud', 'entregar producto']
 
+@app.errorhandler(404)
+def not_fpund(error):
+    return render_template('404.html', error=error)
+
 @app.route('/')
 def index():
     user_ip = request.remote_addr
